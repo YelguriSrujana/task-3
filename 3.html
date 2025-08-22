@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Styling & JavaScript Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Advanced Styling & JavaScript Demo</h1>
+  </header>
+
+  <!-- Responsive Section -->
+  <section>
+    <h2>Responsive Layout</h2>
+    <p>This section adjusts layout and font size based on screen size.</p>
+    <div class="container">
+      <div class="box">Box 1</div>
+      <div class="box">Box 2</div>
+      <div class="box">Box 3</div>
+    </div>
+  </section>
+
+  <!-- Quiz Section -->
+  <section>
+    <h2>Interactive Quiz</h2>
+    <div class="quiz-box">
+      <h3 id="question">Question will appear here</h3>
+      <div id="options"></div>
+      <button onclick="nextQuestion()">Next</button>
+    </div>
+  </section>
+
+  <!-- Carousel Section -->
+  <section>
+    <h2>Image Carousel</h2>
+    <div class="carousel">
+      <img id="carousel-img" src="https://picsum.photos/id/1015/500/300" alt="carousel">
+      <button class="prev" onclick="prevImage()">&#10094;</button>
+      <button class="next" onclick="nextImage()">&#10095;</button>
+    </div>
+  </section>
+
+   <section class="api">
+      <h2>Random Joke</h2>
+      <p id="joke">Fetching joke...</p>
+      <button onclick="fetchJoke()">Get New Joke</button>
+    </section>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
+

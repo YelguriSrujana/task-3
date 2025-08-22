@@ -1,0 +1,87 @@
+body { 
+  font-family: Arial, sans-serif; 
+  margin: 0; 
+  padding: 0; 
+  text-align: center; 
+}
+header { 
+  background: #3498db; 
+  color: white; 
+  padding: 20px; 
+}
+section { 
+  padding: 20px; 
+}
+h2 { 
+  margin-bottom: 15px; 
+}
+
+/* Quiz Styles */
+.quiz-box { 
+  max-width: 400px; 
+  margin: auto; 
+  padding: 20px; 
+  border: 1px solid #ccc; 
+  border-radius: 10px; 
+}
+.quiz-box button { 
+  padding: 10px 20px; 
+  margin-top: 10px; 
+  cursor: pointer; 
+}
+
+/* Carousel */
+.carousel { 
+  max-width: 500px; 
+  margin: auto; 
+  position: relative; 
+}
+.carousel img { 
+  width: 100%; 
+  border-radius: 10px; 
+}
+.carousel button {
+  position: absolute; 
+  top: 50%; 
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5); 
+  color: white; 
+  border: none; 
+  cursor: pointer;
+  padding: 10px; 
+  border-radius: 50%;
+}
+.carousel .prev { left: 10px; }
+.carousel .next { right: 10px; }
+
+/* Weather API */
+.weather-box { 
+  background: #f1f1f1; 
+  padding: 20px; 
+  border-radius: 10px; 
+  display: inline-block; 
+  margin-top: 15px; 
+}
+
+/* Responsive Layout */
+.container { 
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: center; 
+  padding: 20px; 
+}
+.box { 
+  background: #f1f1f1; 
+  margin: 10px; 
+  padding: 20px; 
+  width: 300px; 
+  border-radius: 10px; 
+}
+
+@media (max-width: 768px) {
+  .box { width: 45%; }
+}
+@media (max-width: 480px) {
+  .box { width: 100%; }
+}
+
